@@ -81,6 +81,9 @@ letsGoText.addEventListener('copy', e => {
 const navLink = document.querySelector('.nav-link');
 
 // Event Listener #8a - 'mouseout'
+// The placement of the '.stopPropagation()' method on this .navLink
+// event listener stops it from bubbling up in the DOM to it's parent
+// element's (.navBar) event listener.
 navLink.addEventListener('mouseout', e => {
   console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
   e.stopPropagation();
@@ -124,6 +127,7 @@ navBar.addEventListener('mouseout', e => {
 
 
 // *EXTRA* Event Listener #13 - 'click'
+
 navLink.addEventListener('click', e => {
     console.log(`User has clicked on an <a> element within the <nav> element, triggering this event: ${e}, BUT the default action has been STOPPED!`);
     e.preventDefault();
