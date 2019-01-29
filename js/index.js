@@ -87,7 +87,8 @@ const letsGoText = document.querySelector('div.lets-go p');
 
 // Event Listener #7 - 'copy'
 letsGoText.addEventListener('copy', e => {
-  console.log(`User has initiated the 'copy' action on the text of the "Let's Go!" <p> element, triggering this event: ${e}`);
+  console.log(`User has initiated the 'copy' action on the first <p> element's text of the "Let's Go!" <div>, triggering this event: ${e}`);
+  letsGoText.style.color = "purple";
 });
 
 
