@@ -85,11 +85,10 @@ navLink.addEventListener('mouseout', e => {
   console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
 });
 
-
-// // Event Listener #9 - 'scroll'
-// funBusH1.addEventListener('scroll', e => {
-//     console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-//   });
+// Event Listener #9 - 'scroll'
+document.addEventListener('scroll', e => {
+    console.log(`User has used the window's scrolling capability, triggering this event: ${e}`);
+  });
 
 
 // // Event Listener #10 - 'select'
