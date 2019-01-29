@@ -59,6 +59,7 @@ const adventureImage = document.querySelector('.adventure-image');
 // Event Listener #4 - 'mouseenter'
 adventureImage.addEventListener('mouseenter', e => {
   console.log(`User has moved the pointing device into the <img> element of the 'map on a table', triggering this event: ${e}`);
+  adventureImage.style.borderRadius = "50%";
 });
 
 
