@@ -62,12 +62,12 @@ boatImage.addEventListener('contextmenu', e => {
 });
 
 
-// const funBusH1 = document.querySelector('.logo-heading');
+const adventureAwaitsH2 = document.querySelector('div.adventure-awaits h2');
 
-// // Event Listener #6 - 'load'
-// funBusH1.addEventListener('load', e => {
-//   console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-// });
+// Event Listener #6 - 'mouseup'
+adventureAwaitsH2.addEventListener('mouseup', e => {
+  console.log(`User has released the pointing device button over the "Adventure Awaits" <h2>, triggering this event: ${e}`);
+});
 
 
 // const funBusH1 = document.querySelector('.logo-heading');
