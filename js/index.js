@@ -78,6 +78,8 @@ const adventureAwaitsH2 = document.querySelector('div.adventure-awaits h2');
 // Event Listener #6 - 'mouseup'
 adventureAwaitsH2.addEventListener('mouseup', e => {
   console.log(`User has released the pointing device button over the "Adventure Awaits" <h2> element, triggering this event: ${e}`);
+  adventureAwaitsH2.style.fontSize = "65px";
+  adventureAwaitsH2.style.textAlign = "center";
 });
 
 
