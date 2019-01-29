@@ -38,6 +38,9 @@ const funBusH1 = document.querySelector('.logo-heading');
 // Event Listener #2 - 'dblclick'
 funBusH1.addEventListener('dblclick', e => {
   console.log(`User has double-clicked on the "Fun Bus" text in the <header> element, triggering this event: ${e}`);
+  funBusH1.style.backgroundColor = "aqua";
+  funBusH1.style.color = "red";
+  TweenMax.to(".logo-heading", 1, {x:300, ease:Bounce.easeOut});
 });
 
 
