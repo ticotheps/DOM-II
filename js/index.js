@@ -100,6 +100,8 @@ const navLink = document.querySelector('.nav-link');
 // element's (.navBar) event listener.
 navLink.addEventListener('mouseout', e => {
   console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
+  navLink.style.fontSize = "32px";
+  navLink.style.color = "blue";
   e.stopPropagation();
 });
 
