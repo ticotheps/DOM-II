@@ -54,12 +54,12 @@ adventureImage.addEventListener('auxclick', e => {
 });
 
 
-// const funBusH1 = document.querySelector('.logo-heading');
+const boatImage = document.querySelector('.boat-image');
 
-// // Event Listener #5 - 'drag'
-// funBusH1.addEventListener('drag', e => {
-//   console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-// });
+// Event Listener #5 - 'contextmenu'
+boatImage.addEventListener('contextmenu', e => {
+  console.log(`User has right-clicked on the image of the boat traveling through the neighborhood, triggering this event: ${e}`);
+});
 
 
 // const funBusH1 = document.querySelector('.logo-heading');
