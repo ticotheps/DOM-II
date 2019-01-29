@@ -49,6 +49,8 @@ const funBusImage = document.querySelector('.fun-bus-image');
 // Event Listener #3 - 'mouseover'
 funBusImage.addEventListener('mouseover', e => {
   console.log(`User has moved the pointing device on to the image of the toy bus in the sand, triggering this event: ${e}`);
+  funBusImage.style.border = "5px solid green";
+  TweenMax.to(".fun-bus-image", 3, {x:0, rotationY:360});
 });
 
 
