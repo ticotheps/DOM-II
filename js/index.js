@@ -68,6 +68,8 @@ const boatImage = document.querySelector('.boat-image');
 // Event Listener #5 - 'contextmenu'
 boatImage.addEventListener('contextmenu', e => {
   console.log(`User has right-clicked on the image of the boat traveling through the neighborhood, triggering this event: ${e}`);
+  boatImage.style.borderRadius = "0px";
+  boatImage.style.border = "5px solid orange";
 });
 
 
