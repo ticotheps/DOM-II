@@ -26,7 +26,7 @@ const signMeUpBtn1 = document.querySelector('.btn-1');
 
 // Event Listener #1 - 'click'
 signMeUpBtn1.addEventListener('click', e => {
-  console.log(`User has clicked on the "Sign Me Up!" button under the "Fun In The Sun" <div>, triggering this event: ${e}`);
+  console.log(`User has clicked on the "Sign Me Up!" button under the "Fun In The Sun" <div> element, triggering this event: ${e}`);
 });
 
 
@@ -34,7 +34,7 @@ const funBusH1 = document.querySelector('.logo-heading');
 
 // Event Listener #2 - 'dblclick'
 funBusH1.addEventListener('dblclick', e => {
-  console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
+  console.log(`User has double-clicked on the "Fun Bus" text in the <header> element, triggering this event: ${e}`);
 });
 
 
@@ -66,16 +66,16 @@ const adventureAwaitsH2 = document.querySelector('div.adventure-awaits h2');
 
 // Event Listener #6 - 'mouseup'
 adventureAwaitsH2.addEventListener('mouseup', e => {
-  console.log(`User has released the pointing device button over the "Adventure Awaits" <h2>, triggering this event: ${e}`);
+  console.log(`User has released the pointing device button over the "Adventure Awaits" <h2> element, triggering this event: ${e}`);
 });
 
 
-// const funBusH1 = document.querySelector('.logo-heading');
+const letsGoText = document.querySelector('div.lets-go p');
 
-// // Event Listener #7 - 'focus'
-// funBusH1.addEventListener('focus', e => {
-//   console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-// });
+// Event Listener #7 - 'copy'
+letsGoText.addEventListener('copy', e => {
+  console.log(`User has initiated the 'copy' action on the text of the "Let's Go!" <p> element, triggering this event: ${e}`);
+});
 
 
 // const funBusH1 = document.querySelector('.logo-heading');
