@@ -85,6 +85,7 @@ navLink.addEventListener('mouseout', e => {
   console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
 });
 
+
 // Event Listener #9 - 'scroll'
 document.addEventListener('scroll', e => {
     console.log(`User has used the window's scrolling capability, triggering this event: ${e}`);
@@ -95,6 +96,22 @@ document.addEventListener('scroll', e => {
 window.addEventListener('resize', e => {
     console.log(`User has resized the document view, triggering this event: ${e}`);
   });
+
+
+const signMeUpBtn2 = document.querySelector('div.btn-2');
+
+// *EXTRA* Event Listener #11 - 'click'
+signMeUpBtn2.addEventListener('click', e => {
+    console.log(`User has clicked on the "Sign Me Up!" button <div> element with class '.btn-2', triggering this event: ${e}`);
+});
+
+
+const signMeUpBtn3 = document.querySelector('div.btn-3');
+
+// *EXTRA* Event Listener #12 - 'click'
+signMeUpBtn3.addEventListener('click', e => {
+    console.log(`User has clicked on the "Sign Me Up!" button <div> element with class '.btn-3', triggering this event: ${e}`);
+});
 
 
 
