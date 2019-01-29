@@ -27,6 +27,7 @@ const signMeUpBtn1 = document.querySelector('div.btn-1');
 // Event Listener #1 - 'click'
 signMeUpBtn1.addEventListener('click', e => {
   console.log(`User has clicked on the "Sign Me Up!" button <div> element with class '.btn-1', triggering this event: ${e}`);
+  signMeUpBtn1.style.color = "yellow";
 });
 
 
