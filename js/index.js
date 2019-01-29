@@ -123,3 +123,9 @@ navBar.addEventListener('mouseout', e => {
 });
 
 
+// *EXTRA* Event Listener #13 - 'click'
+navLink.addEventListener('click', e => {
+    console.log(`User has clicked on an <a> element within the <nav> element, triggering this event: ${e}, BUT the default action has been STOPPED!`);
+    e.preventDefault();
+});
+
