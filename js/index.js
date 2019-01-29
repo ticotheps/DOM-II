@@ -78,12 +78,12 @@ letsGoText.addEventListener('copy', e => {
 });
 
 
-// const funBusH1 = document.querySelector('.logo-heading');
+const navLink = document.querySelector('.nav-link');
 
-// // Event Listener #8 - 'resize'
-// funBusH1.addEventListener('resize', e => {
-//   console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-// });
+// Event Listener #8 - 'mouseout'
+navLink.addEventListener('mouseout', e => {
+  console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
+});
 
 
 // // Event Listener #9 - 'scroll'
