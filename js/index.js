@@ -80,9 +80,10 @@ letsGoText.addEventListener('copy', e => {
 
 const navLink = document.querySelector('.nav-link');
 
-// Event Listener #8 - 'mouseout'
+// Event Listener #8a - 'mouseout'
 navLink.addEventListener('mouseout', e => {
   console.log(`User has moved their pointing device off of an <a> element, triggering this event: ${e}`);
+  e.stopPropagation();
 });
 
 
@@ -111,6 +112,14 @@ const signMeUpBtn3 = document.querySelector('div.btn-3');
 // *EXTRA* Event Listener #12 - 'click'
 signMeUpBtn3.addEventListener('click', e => {
     console.log(`User has clicked on the "Sign Me Up!" button <div> element with class '.btn-3', triggering this event: ${e}`);
+});
+
+
+const navBar = document.querySelector('.nav');
+
+// Event Listener #8b - 'mouseout' (PARENT ELEMENT to nested .navLink <a> elements)
+navBar.addEventListener('mouseout', e => {
+  console.log(`User has moved their pointing device off of the <nav> element, triggering this event: ${e}`);
 });
 
 
