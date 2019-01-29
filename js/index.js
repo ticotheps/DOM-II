@@ -56,9 +56,9 @@ funBusImage.addEventListener('mouseover', e => {
 
 const adventureImage = document.querySelector('.adventure-image');
 
-// Event Listener #4 - 'auxclick'
-adventureImage.addEventListener('auxclick', e => {
-  console.log(`User has aux-clicked (with a NON-primary button) on the image of the 'map on a table', triggering this event: ${e}`);
+// Event Listener #4 - 'mouseenter'
+adventureImage.addEventListener('mouseenter', e => {
+  console.log(`User has moved the pointing device into the <img> element of the 'map on a table', triggering this event: ${e}`);
 });
 
 
