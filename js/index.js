@@ -22,11 +22,11 @@
 //   using preventDefault()
 
 
-const signMeUpBtn1 = document.querySelector('.btn-1');
+const signMeUpBtn1 = document.querySelector('div.btn-1');
 
 // Event Listener #1 - 'click'
 signMeUpBtn1.addEventListener('click', e => {
-  console.log(`User has clicked on the "Sign Me Up!" button under the "Fun In The Sun" <div> element, triggering this event: ${e}`);
+  console.log(`User has clicked on the "Sign Me Up!" button <div> element with class '.btn-1', triggering this event: ${e}`);
 });
 
 
@@ -91,10 +91,10 @@ document.addEventListener('scroll', e => {
   });
 
 
-// // Event Listener #10 - 'select'
-// funBusH1.addEventListener('select', e => {
-//     console.log(`User has double-clicked on the "Fun Bus" text in the <header>, triggering this event: ${e}`);
-//   });
+// Event Listener #10 - 'resize'
+window.addEventListener('resize', e => {
+    console.log(`User has resized the document view, triggering this event: ${e}`);
+  });
 
 
 
