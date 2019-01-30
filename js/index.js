@@ -70,6 +70,7 @@ boatImage.addEventListener('contextmenu', e => {
   console.log(`User has right-clicked on the image of the boat traveling through the neighborhood, triggering this event: ${e}`);
   boatImage.style.borderRadius = "0px";
   boatImage.style.border = "5px solid orange";
+  TweenMax.to(".boat-image", 3, {x:-20, y:0, scale:0.75, skewX:45, rotation:360});
 });
 
 
