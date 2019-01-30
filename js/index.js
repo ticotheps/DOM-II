@@ -105,10 +105,12 @@ navLink.addEventListener('mouseout', e => {
   e.stopPropagation();
 });
 
+const containerForContent = document.querySelector('.container');
 
 // Event Listener #9 - 'scroll'
 document.addEventListener('scroll', e => {
     console.log(`User has used the window's scrolling capability, triggering this event: ${e}`);
+    containerForContent.style.backgroundColor = "yellow";
   });
 
 
