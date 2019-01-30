@@ -30,6 +30,7 @@ signMeUpBtn1.addEventListener('click', e => {
   signMeUpBtn1.style.color = "yellow";
   signMeUpBtn1.style.backgroundColor = "blue";
   signMeUpBtn1.textContent = "GO BLUE!";
+  TweenMax.from("div.btn-1", 1, {x:25, ease: Bounce.easeOut});
 });
 
 
