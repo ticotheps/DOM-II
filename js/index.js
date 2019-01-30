@@ -105,18 +105,21 @@ navLink.addEventListener('mouseout', e => {
   e.stopPropagation();
 });
 
-const containerForContent = document.querySelector('.container');
+const containerForHeader = document.querySelector('.container');
 
 // Event Listener #9 - 'scroll'
 document.addEventListener('scroll', e => {
     console.log(`User has used the window's scrolling capability, triggering this event: ${e}`);
-    containerForContent.style.backgroundColor = "yellow";
+    containerForHeader.style.backgroundColor = "yellow";
   });
 
+
+const containerForFooter = document.querySelector('.footer');
 
 // Event Listener #10 - 'resize'
 window.addEventListener('resize', e => {
     console.log(`User has resized the document view, triggering this event: ${e}`);
+    containerForFooter.style.background = "lightblue";
   });
 
 
